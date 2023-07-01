@@ -12,6 +12,9 @@ function isAuthenticated(req, res, next) {
   if (req.user && req.isAuthenticated()) {
     return next();
   }
+  
+
+  
 
   return res.redirect('/login');
 }
